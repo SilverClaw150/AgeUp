@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<html>
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123437273-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,7 +11,7 @@
   gtag('config', 'UA-123437273-1');
 </script>
 
-
+      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -24,22 +23,14 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
+
+    </head>
     
-    <style type="text/css">
-      #name {
-        height:80vh;
-      }
-    </style>
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <img id='logo' src="LogoMakr_2gZQgn.png" style="width:4%;height:4%;"> </img>
         <a class="navbar-brand" href="index.html">AgeUp</a>
@@ -56,56 +47,54 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Customer Support</a>
-            </li>
-           
+            
             
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Other Pages
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item active" href="full-width.html">Login Page</a>
-                <a class="dropdown-item" href="pricing.html">Sign Up Page</a>
+                <a class="dropdown-item" href="full-width.html">Login Page</a>
+                <a class="dropdown-item active" href="pricing.html">Sign Up Page</a>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- Page Content -->
-    <div class="container" id="name">
-
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Login
-        
-      </h1>
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Login</li>
-      </ol>
-
-      <p>If you have an account login through <a href="login.html">here</a>. Unless you have an account already, you will not be able to access the full benefits of the website.
-        </p>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; AgeUp 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
+    
+    <div class="container">
+            <div class="row justify-content-around justify-center">
+                <div class="col col-6 jumbotron">
+                    <h2>Login</h2>
+                    <input type="text" class="form-control" placeholder="E-mail" id="email">
+                    <input type="password" class="form-control" placeholder="Password" id="password">
+                    
+                    
+                    
+                    <button id="signup" class="btn-warning">Login</button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBTMLGO4yN2Eq9RyCL1A3vmF9NXZwFoz1Y",
+        authDomain: "password-db3a5.firebaseapp.com",
+        databaseURL: "https://password-db3a5.firebaseio.com",
+        projectId: "password-db3a5",
+        storageBucket: "",
+        messagingSenderId: "672726436662"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
+    <script type="text/javascript" src="login.js"></script>
+     </body>
 </html>

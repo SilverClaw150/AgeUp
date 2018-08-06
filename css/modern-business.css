@@ -27,3 +27,48 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.my-4 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+#lol {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+.card-title {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+#lul {
+  text-align: center;
+}
+
+.carousel-item {
+   font-family: 'Abril Fatface', cursive;
+}
+
+.btn {
+  background-color: #0000b3
+}
+#lel {
+  background-color: #0099ff
+}
+
+#lal {
+  background-color: #0099ff
+}
+.card-header {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar-brand {
+ font-family: 'Lobster', cursive;
+}
+
+.mb-3 {
+  font-family: 'Abril Fatface', cursive;
+}
